@@ -1,0 +1,109 @@
+<div class="home mountain-seperator">
+  <%= video_tag( 'Cover_s.MP4', id: 'video', autoplay: true, loop: true, muted: true )%>
+
+  <div class="home-content">
+    <h1><span class="pre">Bereit für</span><br>Abendteuer?</h1>
+  </div>
+</div>
+
+<%# Highlights Section%>
+
+<section class="mt-5">
+  <h1>Highlights</h1>
+  <div class="container">
+  <div class="d-flex justify-content-center">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MUu3q6gxxp8?si=snVMgcDWIDuzVgdv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9mEy6fSvnc4?si=pwvKhPxjvlLa0qGP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lPiYZxGjbPo?si=7MyNZmKdtjJm1qUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+  </div>
+</div>
+
+  <%# Video mit Link zu Post %>
+  <p>Biking, Skitouren, Rafting und vieles mehr ...</p>
+  <div class="d-flex justify-content-center">
+    <div class="button">
+      <a href="#">Entdecke meine Projekte</a>
+    </div>
+  </div>
+</section>
+
+<%# Über mich Section %>
+
+<section id="about" class="mt-5">
+  <div class="d-flex align-items-center">
+    <div class="m-5">
+      <p><span class="quote">"Ich erzähle echte Geschichten<br> - reale Outdoor Abenteuer"</span></p>
+    </div>
+    <%= image_tag("Pete.png", class:"me") %>
+  </div>
+</section>
+
+<%# Stats Section %>
+
+<section id="stats" data-controller="counter">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <p><span class="number" data-counter-target="countries" country="70">0</span></p>
+        <p><span class="stats">bereiste Länder</span></p>
+      </div>
+      <div class="col-4">
+        <p><span class="number"><span data-counter-target="meters" height="6081">0</span>m</span></p>
+        <p><span class="stats">höchster bestiegener Punkt</span></p>
+      </div>
+      <div class="col-4">
+        <p><span class="number" data-counter-target="tours" alps="19">0</span></p>
+        <p><span class="stats">Mal die Alpen überquert</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%# Veröffentlichung Section %>
+
+<section id="article" class="mt-5">
+  <div class="container">
+    <h1>Meine Veröffentlichungen</h1>
+    <div class="row mt-4">
+      <div class="col-6 d-flex justify-content-center">
+        <%= image_tag("Article.png", class:"article_img") %>
+      </div>
+      <div class="col-6">
+        <p class="text-start">Ich schreibe für die größten Magazine im Outdoor Bereich Artikel zu meinen Abenteuern, unter anderem für:</p>
+        <ul>
+          <li>Alpin Bergmagazin</li>
+          <li>Trekking Magazin</li>
+          <li>Bike Magazin</li>
+          <li>Kanu Magazin</li>
+          <li>... und weitere</li>
+        </ul>
+        <div class="button">
+          <a href="#">Kontaktiere mich</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
