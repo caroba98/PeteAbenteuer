@@ -1,0 +1,29 @@
+.me {
+  width: 250px;
+  @media (max-width: 800px) {
+    width: 160px !important;
+    margin-right: 30px;
+    }
+}
+
+.article_img {
+  width: 350px;
+  height: auto;
+  @media (max-width: 800px) {
+    width: 100px !important;
+    }
+}
+
+.icons {
+  font-size: 40px;
+}
+
+.cover {
+  left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
+  }
